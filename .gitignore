@@ -1,0 +1,24 @@
+
+# Results
+results
+*.log
+*.png
+*.tsv
+*.json
+*.csv
+
+# Build
+build/
+*.egg-info
+*.so
+
+# Python
+*.pyc
+__pycache__
+
+# VIM
+*.swp
+
+# Others
+.DS_Store
+.vscode

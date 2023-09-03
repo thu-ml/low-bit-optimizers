@@ -1,0 +1,19 @@
+QUANT:
+  M:
+    ENABLE: True
+    BITS: 6
+    GROUP_SIZE: 128
+    SCALE_TYPE:
+      DEFAULT: group
+    QUANT_TYPE:
+      DEFAULT: nonlinear
+    ROUND_TYPE: real-nearest
+  SQM:
+    ENABLE: True
+    BITS: 6
+    GROUP_SIZE: 128
+    SCALE_TYPE:
+      DEFAULT: rank1
+    QUANT_TYPE:
+      DEFAULT: power-1
+    ROUND_TYPE: real-nearest
