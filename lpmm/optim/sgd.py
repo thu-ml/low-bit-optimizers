@@ -20,6 +20,7 @@ class SGD(LowBitOptimizer):
             qconfig=None,
             *, 
             maximize: bool = False,
+            fused: Optional[bool] = False,
         ):
         if lr < 0.0:
             raise ValueError("Invalid learning rate: {}".format(lr))
@@ -27,6 +28,8 @@ class SGD(LowBitOptimizer):
             raise ValueError("Invalid momentum value: {}".format(momentum))
         if weight_decay < 0.0:
             raise ValueError("Invalid weight_decay value: {}".format(weight_decay))
+        if fused is True:
+            raise ValueError("Not support fused SGD currently.")
         
         defaults = dict(
             lr=lr, 
