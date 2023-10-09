@@ -13,7 +13,7 @@ To install run:
 
 ```bash
 git clone https://github.com/thu-ml/low-bit-optimizers.git
-pip install -v -e .
+pip install -v -e ./low-bit-optimizers
 ```
 
 ## Usage
